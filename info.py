@@ -68,15 +68,15 @@ else:
     SUPPORT_GROUP = int(SUPPORT_GROUP)
 
 # MongoDB information
-DATA_DATABASE_URL = environ.get('DATA_DATABASE_URL', "mongodb+srv://houaidjihoussem_db_user:41eOz8Cuy2OiGBy3@cluster0.nj3eywa.mongodb.net/?appName=Cluster0")
+DATA_DATABASE_URL = environ.get('DATA_DATABASE_URL', "mongodb://houaidjihoussem_db_user:41eOz8Cuy2OiGBy3@ac-yfqvaup-shard-00-00.nj3eywa.mongodb.net:27017,ac-yfqvaup-shard-00-01.nj3eywa.mongodb.net:27017,ac-yfqvaup-shard-00-02.nj3eywa.mongodb.net:27017/DBNAME?replicaSet=atlas-5nw18r-shard-0&authSource=admin&connectTimeoutMS=30000")
 if len(DATA_DATABASE_URL) == 0:
     logger.error('DATA_DATABASE_URL is missing, exiting now')
     exit()
-FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://houaidjihoussem_db_user:41eOz8Cuy2OiGBy3@cluster0.nj3eywa.mongodb.net/?appName=Cluster0")
+FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb://houaidjihoussem_db_user:41eOz8Cuy2OiGBy3@ac-yfqvaup-shard-00-00.nj3eywa.mongodb.net:27017,ac-yfqvaup-shard-00-01.nj3eywa.mongodb.net:27017,ac-yfqvaup-shard-00-02.nj3eywa.mongodb.net:27017/DBNAME?replicaSet=atlas-5nw18r-shard-0&authSource=admin&connectTimeoutMS=30000")
 if len(FILES_DATABASE_URL) == 0:
     logger.error('FILES_DATABASE_URL is missing, exiting now')
     exit()
-SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "mongodb+srv://houaidjihoussem_db_user:41eOz8Cuy2OiGBy3@cluster0.nj3eywa.mongodb.net/?appName=Cluster0")
+SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "mongodb://houaidjihoussem_db_user:41eOz8Cuy2OiGBy3@ac-yfqvaup-shard-00-00.nj3eywa.mongodb.net:27017,ac-yfqvaup-shard-00-01.nj3eywa.mongodb.net:27017,ac-yfqvaup-shard-00-02.nj3eywa.mongodb.net:27017/DBNAME?replicaSet=atlas-5nw18r-shard-0&authSource=admin&connectTimeoutMS=30000")
 if len(SECOND_FILES_DATABASE_URL) == 0:
     logger.info('SECOND_FILES_DATABASE_URL is empty')
 DATABASE_NAME = environ.get('DATABASE_NAME', "houadjihoussem")
