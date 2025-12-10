@@ -72,14 +72,14 @@ DATA_DATABASE_URL = environ.get('DATA_DATABASE_URL', "mongodb+srv://houaidjihous
 if len(DATA_DATABASE_URL) == 0:
     logger.error('DATA_DATABASE_URL is missing, exiting now')
     exit()
-FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://irlwolf:9aEpUre0fkmBjHVz@cluster0.jkd3o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://houaidjihoussem_db_user:41eOz8Cuy2OiGBy3@cluster0.nj3eywa.mongodb.net/?appName=Cluster0")
 if len(FILES_DATABASE_URL) == 0:
     logger.error('FILES_DATABASE_URL is missing, exiting now')
     exit()
-SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "mongodb+srv://irlwolf:9aEpUre0fkmBjHVz@cluster0.jkd3o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "mongodb+srv://houaidjihoussem_db_user:41eOz8Cuy2OiGBy3@cluster0.nj3eywa.mongodb.net/?appName=Cluster0")
 if len(SECOND_FILES_DATABASE_URL) == 0:
     logger.info('SECOND_FILES_DATABASE_URL is empty')
-DATABASE_NAME = environ.get('DATABASE_NAME', "irlwolf")
+DATABASE_NAME = environ.get('DATABASE_NAME', "houadjihoussem")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
